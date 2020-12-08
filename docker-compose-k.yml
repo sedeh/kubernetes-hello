@@ -19,7 +19,7 @@ spec:
         image: localhost:5000/main:1.0
         resources:
           limits:
-            memory: "256Mi"
+            memory: "200Mi"
         imagePullPolicy: Always
         env:
           - name: CONTAINER_NAME
@@ -62,7 +62,7 @@ spec:
         image: localhost:5000/app1:1.0
         resources:
           limits:
-            memory: "256Mi"
+            memory: "200Mi"
         imagePullPolicy: Always
         env:
           - name: CONTAINER_NAME
@@ -103,7 +103,7 @@ spec:
         image: localhost:5000/app2:1.0
         resources:
           limits:
-            memory: "256Mi"
+            memory: "200Mi"
         imagePullPolicy: Always
         env:
           - name: CONTAINER_NAME
