@@ -59,7 +59,9 @@ curl http://0.0.0.0:30000/
 If successful, you will see an output like:
 
 ```json
-{"app1-deployment-6fd7554c44-zptdf":"hello from app1","app2-deployment-5f9986ccff-xf6vm":"hello from app2","main-deployment-7947f5df57-pdfbc":"hello from main"}
+{"app1-deployment-6fd7554c44-zptdf": "hello from app1",
+ "app2-deployment-5f9986ccff-xf6vm": "hello from app2",
+ "main-deployment-7947f5df57-pdfbc": "hello from main"}
 ```
 
 Essentially, main is listening on port 30000 on the host machine and communicates with app1 and app2 on port 8080.
