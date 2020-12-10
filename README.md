@@ -34,7 +34,7 @@ Run the multi-container app:
 ```shell script
 kubectl create namespace hello
 kubectl config set-context --current --namespace=hello
-kubectl apply -f docker-compose-k.yml
+kubectl apply -f myapp.yml
 kubectl get deploy
 ```
 
@@ -44,7 +44,7 @@ To see the actual containers or pods, execute:
 kubectl get pod
 ```
 
-Copy one of the pods and stream the log. Something like: 
+Copy one of the pods and stream the log. For example: 
 
 ```shell script
 kubectl logs -f main-deployment-7947f5df57-pdfbc
